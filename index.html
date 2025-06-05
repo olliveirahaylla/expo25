@@ -1,58 +1,194 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stand UEM na Expoingá</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <header>
+    <img src="expo.jpeg" alt="Logo da Universidade Estadual de Maringá" width="490px" />
+    <h1>Stand UEM na ExpoInga 2025</h1>
+  </header>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Stand UEM na Expoingá 2025</h1>
-    
-    <nav>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#atracoes">Atrações</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <a href="#sobre">Sobre a UEM</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
-  <section id="sobre">
-    <h2>Sobre o Stand</h2>
-    <p>O stand da Universidade Estadual de Maringá na Expoingá 2025 traz ciência, inovação e cultura. Descubra projetos, cursos e experiências interativas da UEM!</p>
-  </section>
+  <main>
+    <section id="sobre">
+      <h2>Sobre a UEM</h2>
+      <p>
+        A Universidade Estadual de Maringá (UEM) é referência em ensino, pesquisa e extensão no Paraná e no Brasil. Fundada em 1970, promove inovação e formação de qualidade, preparando estudantes para os desafios do futuro.
+      </p>
+    </section>
 
-  <section id="atracoes">
-    <h2>Atrações</h2>
-    <ul>
-      <li>🔬 Oficinas científicas interativas</li>
-      <li>🎓 Palestras com professores e pesquisadores</li>
-      <li>🌱 Mostra de projetos de extensão</li>
-      <li>🎮 Jogos educativos e tecnologia</li>
-    </ul>
-  </section>
+    <section id="eventos">
+      <h2>Eventos no Stand</h2>
+      <div class="evento-card" tabindex="0">
+        <div class="evento-data">10/06 - 14h</div>
+        <div class="evento-desc">Palestra sobre bolsas de pesquisa - descubra como participar dos programas da UEM.</div>
+      </div>
+      <div class="evento-card" tabindex="0">
+        <div class="evento-data">11/06 - 10h</div>
+        <div class="evento-desc">Oficina de robótica para jovens - pratique e aprenda com nossos especialistas.</div>
+      </div>
+      <div class="evento-card" tabindex="0">
+        <div class="evento-data">12/06 - 16h</div>
+        <div class="evento-desc">Demonstração de projetos sustentáveis - conheça iniciativas inovadoras da universidade.</div>
+      </div>
+      <div class="evento-card" tabindex="0">
+        <div class="evento-data">13/06 - 18h</div>
+        <div class="evento-desc">Bate-papo com professores e alunos - tire suas dúvidas e saiba mais sobre os cursos.</div>
+      </div>
+    </section>
 
-  <section id="galeria">
-    <h2>Galeria</h2>
-    <div class="galeria">
-      <img src="imagem1.jpg" alt="Visitantes no stand">
-      <img src="imagem2.jpg" alt="Experimento científico">
-      <img src="imagem3.jpg" alt="Apresentação de projeto">
-    </div>
-  </section>
+    <section id="galeria">
+      <h2>Galeria UEM</h2>
+      <img src="foto uem.png" alt="Fachada da UEM" />
+      <img src="biblioteca.jpeg" alt="Biblioteca Central da UEM" />
+      <img src="campus.jpg" alt="Campus UEM" />
+      <img src="laboratorio.jpg" alt="Laboratório de Informática" />
+    </section>
 
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>📍 Localização: Pavilhão Universitário - Expoingá</p>
-    <p>📅 Período: 9 a 19 de maio de 2025</p>
-    <p>📧 Email: eventos@uem.br</p>
-  </section>
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Quer saber mais? Envie sua mensagem abaixo:</p>
+      <form id="contatoForm" novalidate>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required minlength="3" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@seudominio.com" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required minlength="10"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="resposta" role="alert" aria-live="polite"></p>
+    </section>
+  </main>
+  <!-- Após a seção Eventos, adiciono as novas seções -->
+
+<section id="cursos">
+  <h2>Cursos em Destaque</h2>
+  <ul>
+    <li><strong>Engenharia de Software:</strong> Aprenda a desenvolver soluções tecnológicas inovadoras.</li>
+    <li><strong>Medicina Veterinária:</strong> Formando profissionais para cuidar da saúde animal.</li>
+    <li><strong>Agronomia:</strong> Tecnologias para o desenvolvimento sustentável do campo.</li>
+    <li><strong>Direito:</strong> Preparação para atuar com ética e responsabilidade social.</li>
+  </ul>
+</section>
+
+<section id="pesquisa">
+  <h2>Projetos de Pesquisa</h2>
+  <p>Conheça algumas das pesquisas inovadoras que a UEM apresenta na ExpoInga:</p>
+  <ul>
+    <li>Biotecnologia aplicada ao desenvolvimento de vacinas.</li>
+    <li>Energias renováveis e sustentabilidade urbana.</li>
+    <li>Robótica educativa para inclusão social.</li>
+  </ul>
+</section>
+
+<section id="depoimentos">
+  <h2>Depoimentos</h2>
+  <div class="depoimento-card">
+    <p>"Estudar na UEM mudou minha vida. O apoio dos professores e a infraestrutura do campus são incríveis." - <em>Maria Silva, Engenharia de Software</em></p>
+  </div>
+  <div class="depoimento-card">
+    <p>"Participar da ExpoInga pelo stand da UEM foi uma experiência única para apresentar nossos projetos." - <em>João Pereira, Pesquisador</em></p>
+  </div>
+</section>
+
+<section id="novidades">
+  <h2>Novidades no Stand</h2>
+  <p>Confira as inovações que estamos apresentando este ano:</p>
+  <ul>
+    <li>Realidade virtual para visita guiada ao campus.</li>
+    <li>Workshops interativos sobre inteligência artificial.</li>
+    <li>Laboratório móvel para demonstrações práticas.</li>
+  </ul>
+</section>
+
+<section id="localizacao">
+  <h2>Localização do Stand</h2>
+  <p>Nosso stand está localizado próximo à entrada principal da ExpoInga, no pavilhão B.</p>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.3067541096457!2d-51.93320908449424!3d-23.41303368474994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ec645fc72b57fb%3A0x67d20e536b0fca66!2sUniversidade%20Estadual%20de%20Maring%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1685983264661!5m2!1spt-BR!2sbr"
+    width="100%"
+    height="300"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Mapa da UEM"
+  ></iframe>
+</section>
+
+<section id="redes-sociais">
+  <h2>Conecte-se com a UEM</h2>
+  <p>Siga nossas redes sociais para ficar por dentro de tudo:</p>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/uem.oficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook UEM">
+      <img src="https://cdn-icons-png.flaticon.com/48/733/733547.png" alt="Facebook" />
+    </a>
+    <a href="https://www.instagram.com/uem.oficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram UEM">
+      <img src="https://cdn-icons-png.flaticon.com/48/733/733558.png" alt="Instagram" />
+    </a>
+    <a href="https://twitter.com/uem_oficial" target="_blank" rel="noopener noreferrer" aria-label="Twitter UEM">
+      <img src="https://cdn-icons-png.flaticon.com/48/733/733579.png" alt="Twitter" />
+    </a>
+    <a href="https://www.youtube.com/user/uemoficial" target="_blank" rel="noopener noreferrer" aria-label="YouTube UEM">
+      <img src="https://cdn-icons-png.flaticon.com/48/1384/1384060.png" alt="YouTube" />
+    </a>
+  </div>
+</section>
 
   <footer>
-    <p>&copy; 2025 Universidade Estadual de Maringá</p>
+    <p>© 2025 Universidade Estadual de Maringá - ExpoInga</p>
   </footer>
+
+  <script>
+    // Validação simples e resposta do formulário
+    const form = document.getElementById('contatoForm');
+    const resposta = document.getElementById('resposta');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      resposta.textContent = '';
+      
+      const nome = form.nome.value.trim();
+      const email = form.email.value.trim();
+      const mensagem = form.mensagem.value.trim();
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (nome.length < 3) {
+        resposta.style.color = 'red';
+        resposta.textContent = 'Por favor, insira um nome válido com ao menos 3 caracteres.';
+        form.nome.focus();
+        return;
+      }
+      if (!emailRegex.test(email)) {
+        resposta.style.color = 'red';
+        resposta.textContent = 'Por favor, insira um email válido.';
+        form.email.focus();
+        return;
+      }
+      if (mensagem.length < 10) {
+        resposta.style.color = 'red';
+        resposta.textContent = 'Sua mensagem deve conter ao menos 10 caracteres.';
+        form.mensagem.focus();
+        return;
+      }
+
+      // Simula envio
+      resposta.style.color = 'green';
+      resposta.textContent = 'Mensagem enviada com sucesso! Obrigado pelo contato.';
+      form.reset();
+    });
+  </script>
 </body>
 </html>
